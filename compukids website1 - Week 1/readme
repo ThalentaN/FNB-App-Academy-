@@ -1,0 +1,58 @@
+🦸‍♂️ Earth's Mightiest Heroes – The Avengers
+Welcome to the Avengers Fan Page project! This is a basic but visually styled web page created to honor Marvel’s most iconic superhero team — The Avengers.
+
+🌐 About the Project
+This site introduces visitors to The Avengers — a team of extraordinary heroes like Iron Man, Captain America, Thor, Hulk, and more. Whether you're a new
+fan or a long-time follower, this page gives a brief, bold overview of their legacy.
+
+✨ Features
+Styled layout using custom CSS
+
+Clear and beginner-friendly HTML structure
+
+Colorful, impactful fonts and navigation bar
+
+Fully responsive image display using a gallery class
+
+🛠️ Technologies Used
+HTML5 – for the content and structure
+
+CSS3 – for styling and visual design
+
+📁 File Structure
+bash
+Copy
+Edit
+.
+├── index.html         # Main HTML file
+├── style.css          # Custom CSS file for layout and design
+🎨 Style Highlights
+Impact and Helvetica font families used for bold visual appeal
+
+Custom navigation bar styled with flexbox
+
+Responsive full-width images in .gallery
+
+Stylish headings and colored text for thematic design
+
+🚀 Getting Started
+To view the project locally:
+
+Clone this repository
+
+git clone https://github.com/your-username/avengers-fan-page.git
+Open index.html in your browser
+
+open index.html
+Make sure style.css is in the same directory as index.html.
+
+🧠 Future Plans
+Add individual hero bios with images
+
+Include JavaScript for interactive elements
+
+Make the site fully responsive on all devices
+
+🙌 Acknowledgments
+Thanks to Marvel Studios and creators for decades of inspiration through The Avengers.
+
