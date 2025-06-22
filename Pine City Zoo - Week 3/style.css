@@ -1,0 +1,214 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header logo */
+#header {
+    background-color: #2a7b4f;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#header img {
+    height: 60px;
+}
+
+/* Top navigation bar */
+#tabs-top {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: darkgreen;
+}
+
+#tabs-top a {
+    float: left;
+    display: block;
+    width: 33%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px; 
+}
+
+
+/* Main content area */
+#main .info-box {
+    height: 100%;
+    width: 97%;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+#info-box-full{
+background-color : rgba(255, 255, 255, .8) ;
+width : 90%;
+display : block;
+margin : auto;
+margin-top : 12px;
+padding : 10px;
+}
+#info-box-full img{
+width : 100%;
+}
+#info-box-full h3{
+text-align : center;
+}
+
+.info-box {
+  overflow: hidden; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.info-box img.icon {
+  height: 70px;
+  margin: 10px;
+  float: left;
+}
+
+.info-box img.arrow {
+  float: right;
+  margin-top: 25px;
+  height: 40px;
+}
+
+.info-box h3 {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  color: #572800;
+}
+
+.info-box p {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  color: #131313;
+}
+
+
+#main-home{
+    margin-top: 120px;
+}
+
+#content .info-box {
+    display: block;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    background-color: transparent;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease;
+}
+
+#content .info-box:hover {
+    transform: scale(1.02);
+}
+
+#content h3 {
+    margin-top: 10px;
+    padding : 0;
+margin-bottom :0;
+width : 90%;
+color : #572800;
+}
+
+/* Bottom navigation bar */
+#tabs-bottom {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4CAF50;
+    height: 35px;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#tabs-bottom a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#tabs-bottom a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    position: absolute;
+    top: 120px;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    background: url('images/map-blur.png') no-repeat center top;
+    background-size: cover;
+    z-index: 0;
+}
+
+/*====================WEATHER====================*/
+
+img.info-box-weather-icon{
+    height: 30px;
+    width: 30px !important;
+    margin: 10px;
+    float : left;
+}
+h1.info-box-weather-icon{
+    font-size: 65px;
+    font: weight 200px; 
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+border-top: 1px solid #131313;
+}
+
+/*=====================FORM====================*/
+
+input{
+width: 100%;
+height: 25px;
+margin : 12px 0;
+border : 1px solid #929292;
+}
+textarea{
+width: 100%;
+height :25px;
+margin : 12px 0;
+border : 1px solid #929292;
+}
+.button{
+display : block;
+background-color: forestgreen;
+text-decoration : none;
+text-align : center;
+color : white;
+font-size  : 16px;
+font-weight : 600;
+margin : 12px 0;
+padding : 8px 0;
+}
