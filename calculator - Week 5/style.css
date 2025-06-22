@@ -1,0 +1,43 @@
+text{
+    background-color: #fff;
+    text-align: center;
+    border-collapse: collapse;  
+    font: normal 4em Arial, sans-serif;
+   
+}
+
+tr{
+    height: 16.02vh;
+    background-color: #4e494d;
+}
+td{
+    width: 25vw;
+    border: 1px solid #4e494d;
+    
+}
+#inputBox{
+    background-color: #4e494d;
+    text-align: right;
+    width: 100%;
+    color: #fff;
+    font-size: 2em; ;
+    border: 0px;
+}
+
+.digiButton{
+    background-color: #807e80;
+    color: #fff;
+    font-size: 3em;
+}
+
+.operatorButton{
+    background-color: #ff9e06;
+    font-size:3em;
+    color: #fff;
+}
+
+.ACButton{
+    background-color: #656165;
+    color: #fff;
+    font-size: 3em;
+}
