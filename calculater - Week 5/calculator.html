@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- Input display -->
+    <input type="text" id="inputBox" value="0" />
+
+    <table border="1">
+        <tr>
+            <td class="digiButton" onclick="digitPressed('7')">7</td>
+            <td  class="digiButton" onclick="digitPressed('8')">8</td>
+            <td class="digiButton" onclick="digitPressed('9')">9</td>
+            <td class="operatorButton" onclick="operatorBtnPressed('x')">x</td>
+        </tr>
+        <tr>
+            <td class="digiButton" onclick="digitPressed('4')">4</td>
+            <td class="digiButton" onclick="digitPressed('5')">5</td>
+            <td class="digiButton" onclick="digitPressed('6')">6</td>
+            <td class="operatorButton" onclick="operatorBtnPressed('-')">-</td>
+        </tr>
+        <tr>
+            <td class="digiButton" onclick="digitPressed('1')">1</td>
+            <td class="digiButton" onclick="digitPressed('2')">2</td>
+            <td class="digiButton" onclick="digitPressed('3')">3</td>
+            <td class="operatorButton" onclick="operatorBtnPressed('+')">+</td>
+        </tr>
+        <tr>
+            <td class="digiButton" colspan="2" onclick="digitPressed('0')">0</td>
+            <td class="ACButton" onclick="btnACPressed()">AC</td>
+            <td class="operatorButton" onclick="operatorBtnPressed('/')">/</td>
+        </tr>
+        <tr>
+            <td class="operatorButton" colspan="4" onclick="equalsPressed()">=</td>
+        </tr>
+    </table>
+
+<script>
+    let newLine = true;
+    let value1 = null;
+    let currentOperator = null;
+
+    //Event handler for digit buttons
+    //This function is called when a digit button is pressed
+    function digitPressed(button) {
+        const input = document.getElementById("inputBox");
+        if (newLine || input.value === "0") {
+            input.value = button;
+            newLine = false;
+        } else {
+            input.value += button;
+        }
+    }
+
+    //Event handler for the AC button
+    //This function resets the calculator state
+    function btnACPressed() {
+        document.getElementById("inputBox").value = "0";
+        value1 = null;
+        currentOperator = null;
+        newLine = true;
+    }
+
+    //Event handler for operator buttons
+    //This function is called when an operator button is pressed
+    function operatorBtnPressed(operator) {
+        value1 = parseFloat(document.getElementById("inputBox").value);
+        currentOperator = operator;
+        newLine = true;
+    }
+
+    //Event handler for the equals button
+    function equalsPressed() {
+        const input = document.getElementById("inputBox");
+        const value2 = parseFloat(input.value);
+        let result = 0;
+
+        switch (currentOperator) {
+            case '+':
+                result = value1 + value2;
+                break;
+            case '-':
+                result = value1 - value2;
+                break;
+            case 'x':
+                result = value1 * value2;
+                break;
+            case '/':
+                if (value2 !== 0) {
+                    result = value1 / value2;
+                } else {
+                    alert("Cannot divide by zero");
+                    btnACPressed();
+                    return;
+                }
+                break;
+            default:
+                return; // no operator selected
+        }
+document.getElementById("inputBox").value = result;
+        newLine = true; // Prepare for a new input line
+    }
+</script>
+
+</body>
+</html>
