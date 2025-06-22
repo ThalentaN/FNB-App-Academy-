@@ -1,36 +1,64 @@
-🦸‍♂️ Earth's Mightiest Heroes – The Avengers
-Welcome to the Avengers Fan Page project! This repository contains a simple yet inspiring HTML page dedicated to Marvel's iconic superhero team — The Avengers.
+📱 FNB App Academy – Lesson Repository
+Welcome to the FNB App Academy Lessons repository! This collection contains structured lessons, examples, and hands-on code developed as part of the FNB App Academy's learning program. It covers foundational to intermediate web and app development skills to support aspiring developers and tech enthusiasts.
 
-🌐 About the Project
-This site introduces visitors to The Avengers — a team of extraordinary heroes like Iron Man, Captain America, Thor, Hulk, and more. Whether you're a new fan
-or a long-time follower, this page gives a brief, bold overview of their legacy.
+🎯 Purpose
+This repository was created to:
 
-✨ Features
-- Styled layout using custom CSS
-- Clear and beginner-friendly HTML structure
-- Colorful, impactful fonts and navigation bar
-- Fully responsive image display using a gallery class
+Document the practical exercises completed during the FNB App Academy program.
 
-🛠️ Technologies Used
-- HTML5 – for the content and structure
-- CSS3 – for styling and visual design
+Serve as a learning reference for HTML, CSS, JavaScript, and basic app concepts.
 
-📁 File Structure
+Showcase individual projects built throughout the training.
 
-├── index.html         # Main HTML file
-├── style.css          # Custom CSS file for layout and design
+📚 Topics Covered
+✅ Introduction to HTML5 (structure, tags, semantics)
 
-🎨 Style Highlights
-- Impact and Helvetica font families used for bold visual appeal
-- Custom navigation bar styled with flexbox
-- Responsive full-width images in .gallery
-- Stylish headings and colored text for thematic design
+✅ CSS3 Styling (layouts, responsive design, animations)
 
-🧠 Future Plans
+✅ JavaScript Fundamentals (variables, functions, DOM manipulation)
 
-Include JavaScript for interactive elements
-Make the site fully responsive on all devices
+✅ Forms and User Input
 
-🙌 Acknowledgments
+✅ Building Interactive Web Apps (e.g. calculators, login pages)
 
-Thanks to Marvel Studios and creators for decades of inspiration through The Avengers.
+✅ Project organization and GitHub version control basics
+
+🗂 Folder Structure
+css
+
+fnb-app-academy/
+├── lesson-01-html-basics/
+├── lesson-02-css-styling/
+├── lesson-03-javascript-intro/
+├── mini-projects/
+│   ├── calculator/
+│   ├── login-page/
+│   ├── weather-selector/
+├── README.md
+Each folder contains the respective HTML, CSS, and JS files, with comments and examples explained during lessons.
+
+🚀 How to Use
+Clone this repository to your local machine:
+
+git clone https://github.com/your-username/fnb-app-academy.git
+Open any lesson folder and launch the main HTML file in your browser:
+
+
+open lesson-01-html-basics/index.html
+Explore code, tweak and experiment as you learn.
+
+🧠 Learning Outcomes
+By going through this repository, you will:
+
+Understand how to build a structured web page using HTML and CSS
+
+Gain hands-on experience with JavaScript
+
+Learn to debug and organize projects effectively
+
+Build confidence in web development through real examples
+
+🙌 Credits
+Developed as part of the First National Bank (FNB) App Academy initiative.
+Special thanks to the instructors and team members who made this learning journey possible.
+
